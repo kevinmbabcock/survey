@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Take the Survey!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please fill out the following information</h1>
+      <form id="formX">
+        <div class="form-group smaller">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group smaller">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+
+        <div class="radio space">
+          <label>
+            <input type="radio" name="age" value="under18" checked>   Less than 18 years old
+          </label>
+        </div>
+        <div class="radio space">
+          <label>
+            <input type="radio" name="age" value="18-30" checked>   18 to 30 years old
+          </label>
+        </div>
+        <div class="radio space">
+          <label>
+            <input type="radio" name="age" value="30-45" checked>   30 to 45 years old
+          </label>
+        </div>
+        <div class="radio space">
+          </label>
+            <input type="radio" name="age" value="45-60" checked>   45 to 60 years old
+          </label>
+        </div>
+        <div class="radio space1">
+          <label>
+            <input type="radio" name="age" value="over60">   Over 60 years old
+          </label>
+        </div>
+
+        <div class="form-group smaller">
+          <label for="born">Date of Birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+
+        <p>Please select your favorite from the following options:</p>
+        <select class="form-control smaller" id="food">
+          <option>Cheeseburger</option>
+          <option>Pizza</option>
+          <option>Soup</option>
+          <option>Vegetables</option>
+          <option>Cake</option>
+        </select>
+
+        <div class="form-group smaller">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="display">
+        <p>Thank you for completing the survey <span class="firstName"></span>!</p>
+        <p>Here is the information you entered:</p>
+        <p>Name: <span class="firstName"></span> <span class="lastName"></span><p/>
+        <p>Age: You are between <span class="age"></span> years old, born on <span class="dob"></span></p>
+        <p>Favorite food: <span class="food"></span></p>
+        <p>Favorite color: <span class="color"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

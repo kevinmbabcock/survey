@@ -1,0 +1,16 @@
+.smaller {
+  width: 400px;
+  margin: 20px;
+}
+
+.space {
+  line-height: 25px;
+}
+
+.space1 {
+  line-height: 30px;
+}
+
+.display {
+  display: none;
+}
